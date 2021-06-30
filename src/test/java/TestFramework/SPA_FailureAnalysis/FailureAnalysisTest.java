@@ -117,12 +117,12 @@ public class FailureAnalysisTest extends baseTest
 	{
 		
 		WebElement emailInput = driver.findElement(By.id("i0116"));
-		emailInput.sendKeys("arajguru@plex.com");
+		emailInput.sendKeys("<<paste your email id here>>");
 		driver.findElement(By.id("idSIButton9"));	
 		clickNext();
 		
 		WebElement passInput = driver.findElement(By.id("i0118"));
-		passInput.sendKeys("SuperThiago@6");
+		passInput.sendKeys("<<paste your password here>>");
 		clickNext();
 		
 		//clicking on Final Yes/no dialog
