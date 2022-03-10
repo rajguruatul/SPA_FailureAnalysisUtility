@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-28T13:07:59 IST" name="Default suite" finished-at="2021-06-28T13:39:09 IST" duration-ms="1870300">
+  <suite started-at="2022-03-10T12:18:25 IST" name="Default suite" finished-at="2022-03-10T12:22:48 IST" duration-ms="263805">
     <groups>
     </groups>
-    <test started-at="2021-06-28T13:07:59 IST" name="Default test" finished-at="2021-06-28T13:39:09 IST" duration-ms="1870300">
+    <test started-at="2022-03-10T12:18:25 IST" name="Default test" finished-at="2022-03-10T12:22:48 IST" duration-ms="263805">
       <class name="TestFramework.SPA_FailureAnalysis.FailureAnalysisTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2021-06-28T13:07:59 IST" name="initialize" finished-at="2021-06-28T13:08:02 IST" duration-ms="3642" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2022-03-10T12:18:25 IST" name="initialize" finished-at="2022-03-10T12:18:34 IST" duration-ms="9245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="startFailureAnalysis()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2021-06-28T13:08:02 IST" name="startFailureAnalysis" finished-at="2021-06-28T13:39:07 IST" duration-ms="1864374" status="PASS">
+        <test-method signature="startFailureAnalysis()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2022-03-10T12:18:34 IST" name="startFailureAnalysis" finished-at="2022-03-10T12:22:44 IST" duration-ms="250386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startFailureAnalysis -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2021-06-28T13:39:07 IST" name="teardown" finished-at="2021-06-28T13:39:09 IST" duration-ms="2263" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestFramework.SPA_FailureAnalysis.FailureAnalysisTest@69f1a286]" started-at="2022-03-10T12:22:44 IST" name="teardown" finished-at="2022-03-10T12:22:48 IST" duration-ms="4147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -7,9 +7,11 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -25,6 +27,8 @@ public class baseTest
 	public String url;
 	public int waitTime;
 	public String browser;
+	public String username;
+	public String password;	
 	
 
 	//Initialize Browser 
@@ -37,6 +41,9 @@ public class baseTest
 		browser = prop.getProperty("browser");
 		url = prop.getProperty("url");
 		waitTime=Integer.parseInt(prop.getProperty("waitTime"));
+		username = prop.getProperty("Azure_username");
+		password=prop.getProperty("Azure_password");
+		
 		System.out.println("Browser selects is: "+browser);
 		
 		
@@ -60,8 +67,7 @@ public class baseTest
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(waitTime, TimeUnit.SECONDS);
 		return driver;
-	}
-	
+	}	
 	
 	
 	public String takeScreenshot(String testMethodName, WebDriver driver)

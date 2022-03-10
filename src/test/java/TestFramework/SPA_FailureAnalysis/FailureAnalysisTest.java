@@ -29,7 +29,7 @@ import org.testng.annotations.Test;
 
 public class FailureAnalysisTest extends baseTest
 {
-
+	//10th March 2022
 	public WebDriver driver;
 	public static Logger log =LogManager.getLogger(Base.class.getName());
 	WebDriverWait wait;
@@ -49,9 +49,7 @@ public class FailureAnalysisTest extends baseTest
 		loginMS();
 		getFailCount();		
 	}
-	
-	
-	
+			
 	private void getFailCount() throws IOException 
 	{
 		wait = new WebDriverWait(driver, 4);
@@ -117,12 +115,12 @@ public class FailureAnalysisTest extends baseTest
 	{
 		
 		WebElement emailInput = driver.findElement(By.id("i0116"));
-		emailInput.sendKeys("<<paste your email id here>>");
+		emailInput.sendKeys(username);
 		driver.findElement(By.id("idSIButton9"));	
 		clickNext();
 		
 		WebElement passInput = driver.findElement(By.id("i0118"));
-		passInput.sendKeys("<<paste your password here>>");
+		passInput.sendKeys(password);
 		clickNext();
 		
 		//clicking on Final Yes/no dialog
@@ -136,11 +134,8 @@ public class FailureAnalysisTest extends baseTest
 	
 	public void clickNext()
 	{	
-
 			waitSomeTime(2000);
-			driver.findElement(By.id("idSIButton9")).click();
-			
-
+			driver.findElement(By.id("idSIButton9")).click();		
 	}
 	
 	public void clickDebug()
